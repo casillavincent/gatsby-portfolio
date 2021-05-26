@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 /* Global Styles */
 const GlobalStyle = createGlobalStyle`
@@ -19,5 +19,10 @@ const GlobalStyle = createGlobalStyle`
             cursor: pointer;
         }
     }
-`
-export default GlobalStyle
+
+    article, section {
+        padding: 25px;
+
+    }
+`;
+export default GlobalStyle;
