@@ -1,2 +1,3 @@
-# gatsby-portfolio
- Refactor my portfolio for Gatsby
+# Gatsby Portfolio
+
+> My portfolio refactored as a static site using Gatsby.
