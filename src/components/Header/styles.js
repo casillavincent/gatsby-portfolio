@@ -7,7 +7,6 @@ export const StyledHeader = styled.header`
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   border: 1px solid red;
    position: absolute;
    top: 0px;
    left: 0px;
@@ -30,7 +29,6 @@ export const StyledButton = styled.button`
 export const Navigation = styled.nav`
    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
    position: fixed;
-   border: 1px solid magenta;
    top: ${({ isOpen }) => (isOpen ? "75px" : "100%")};
    opacity: ${({ isOpen }) => (isOpen ? "100%" : "25%")};
    @media screen and (min-width: 50em) {
@@ -39,7 +37,7 @@ export const Navigation = styled.nav`
 
    left: 0px;
    background: rgba(255, 255, 255, 0.95);
-   backdrop-filter: blur(8px);
+   backdrop-filter: blur(10px);
    width: 100%;
    height: 100vh;
 
@@ -57,6 +55,16 @@ export const Navigation = styled.nav`
       list-style-type: none;
       a {
          color: black;
+      }
+   }
+
+   .special-case-li {
+      padding: 5px 30px;
+      /* background: #f55f44; */
+      background: black;
+      border-radius: 50px;
+      a {
+         color: white;
       }
    }
 `;

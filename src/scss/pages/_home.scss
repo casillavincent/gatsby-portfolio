@@ -1,0 +1,116 @@
+/* Home Styles */
+
+/* 
+------------------------------
+    Splash
+------------------------------
+*/
+section.splash {
+   padding-top: 75px; // constitutes for the displacement of the header
+   width: 100%;
+   height: auto;
+
+   // First Row
+   .splash-row-01 {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      @media screen and (min-width: 50em) {
+         height: 100vh;
+         min-height: 600px;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-auto-rows: 100%;
+         max-width: 65%;
+         margin: auto;
+         padding: 0px;
+      }
+
+      // Text Content
+      div.text-content {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         @media screen and (min-width: 50em) {
+            height: 100%;
+         }
+
+         div.inner-text-content {
+            max-width: 100%;
+            h1 {
+               font-size: 0.75em;
+               font-weight: normal;
+               text-transform: uppercase;
+               margin-bottom: 5px;
+            }
+            h2 {
+               font-size: 2em;
+               margin-bottom: 5px;
+               letter-spacing: -1.85px;
+            }
+            p {
+               font-size: 0.9em;
+            }
+            @media screen and (min-width: 50em) {
+               h1 {
+                  font-size: 1em;
+               }
+               h2 {
+                  font-size: 3.5em;
+               }
+               p {
+                  font-size: 1.25em;
+               }
+            }
+         }
+      }
+      // Banner Image
+      div.banner-image {
+         @media screen and (min-width: 50em) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            height: 100%;
+            padding-bottom: 100px;
+         }
+         img {
+            margin-top: 25px;
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            @media screen and (min-width: 50em) {
+               max-width: 550px;
+            }
+         }
+      }
+   }
+
+   // Second Row
+   .splash-row-02 {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: black;
+      color: white;
+      p::after {
+         content: ".";
+         color: $accent;
+      }
+
+      @media screen and (min-width: 50em) {
+         height: 100vh;
+         min-height: 600px;
+         p {
+            font-size: 3em;
+         }
+      }
+   }
+}

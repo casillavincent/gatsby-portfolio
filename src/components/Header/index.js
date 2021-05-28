@@ -46,7 +46,7 @@ const Header = ({ theme }) => {
                <li className="nav-li">
                   <Link to="/">Work</Link>
                </li>
-               <li className="nav-li">
+               <li className="nav-li special-case-li">
                   <Link to="/">Contact</Link>
                </li>
             </ul>
