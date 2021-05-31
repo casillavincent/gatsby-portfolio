@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../../assets/hero.svg";
-import SD from "../SD";
+import Sd from "../Sd";
 
 const Splash = () => {
    return (
@@ -14,7 +14,7 @@ const Splash = () => {
                   <h2>Creative Developer</h2>
                   <p>Front-end Web Developer based in Vancouver, BC</p>
                </div>
-               <SD />
+               <Sd />
             </div>
 
             {/* Banner Image */}
@@ -24,10 +24,8 @@ const Splash = () => {
          </div>
 
          {/* Second Row */}
-         <div className="splash-row-02">
-            <p id="role-description" className="role-description">
-               I build user-facing digital experiences
-            </p>
+         <div className="splash-row-02" id="role-description">
+            <p className="role-description">I build user-facing digital experiences</p>
          </div>
       </section>
    );

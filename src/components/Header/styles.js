@@ -27,7 +27,7 @@ export const StyledButton = styled.button`
 `;
 
 export const Navigation = styled.nav`
-   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1);
    position: fixed;
    top: ${({ isOpen }) => (isOpen ? "75px" : "100%")};
    opacity: ${({ isOpen }) => (isOpen ? "100%" : "25%")};

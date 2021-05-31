@@ -3,8 +3,8 @@ import React from "react";
 const SD = () => (
    <button id="sd" title="Scroll Down Icon">
       <a href="#role-description">
-         <div class="arrow"></div>
-         <div class="arrow"></div>
+         <div className="arrow"></div>
+         <div className="arrow"></div>
       </a>
    </button>
 );
