@@ -58,16 +58,6 @@ export const Navigation = styled.nav`
          color: black;
       }
    }
-
-   .special-case-li {
-      padding: 5px 30px;
-      /* background: #f55f44; */
-      background: black;
-      border-radius: 50px;
-      a {
-         color: white;
-      }
-   }
 `;
 
 export const Logo = styled.div`

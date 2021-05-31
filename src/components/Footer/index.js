@@ -1,26 +1,44 @@
 import React from "react";
-// Icons
-import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
-import { CgTwitter } from "react-icons/cg";
-import { IconContext } from "react-icons";
 const Footer = () => {
    return (
       <footer className="site-footer" id="site-footer">
-         <p>Connect with me</p>
-         <div className="footer-social-icons">
-            <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
-               <a href="#0" title="Github">
-                  <FaGithubAlt />
-               </a>
-               <a href="#0" title="Linkedin">
-                  <FaLinkedinIn />
-               </a>
-               <a href="#0" title="Twitter">
-                  <CgTwitter />
-               </a>
-            </IconContext.Provider>
-         </div>
          <p className="copyright">&copy; Vincent Casilla 2021</p>
+
+         <div className="social">
+            <p>connect with me</p>
+            <div className="social-links">
+               <a
+                  rel="noreferrer"
+                  href="https://twitter.com/casillavincent"
+                  className="twitter-link"
+                  title="Twitter"
+                  id="twitter"
+                  target="_blank"
+               >
+                  Twitter
+               </a>
+               <a
+                  rel="noreferrer"
+                  href="https://github.com/casillavincent"
+                  className="github-link"
+                  title="Github"
+                  id="github"
+                  target="_blank"
+               >
+                  Github
+               </a>
+               <a
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/vcasilla/"
+                  className="linkedin-link"
+                  title="Linkedin"
+                  id="linkedin"
+                  target="_blank"
+               >
+                  Linkedin
+               </a>
+            </div>
+         </div>
       </footer>
    );
 };

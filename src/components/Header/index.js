@@ -41,12 +41,9 @@ const Header = ({ theme }) => {
                   <Link to="/">Home</Link>
                </li>
                <li className="nav-li">
-                  <Link to="/">About</Link>
+                  <Link to="/about">About</Link>
                </li>
                <li className="nav-li">
-                  <Link to="/">Work</Link>
-               </li>
-               <li className="nav-li special-case-li">
                   <Link to="/">Contact</Link>
                </li>
             </ul>

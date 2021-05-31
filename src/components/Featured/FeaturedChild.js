@@ -21,11 +21,11 @@ const FeaturedChild = ({ name, description, stack, github, livesite, img }) => {
             </div>
 
             <div className="ctas">
-               <a href={livesite} className="livesite" target="_blank">
+               <a rel="noreferrer" href={livesite} className="livesite" target="_blank">
                   View Live Site
                </a>
                {github !== null && (
-                  <a href={github} className="github" target="_blank">
+                  <a rel="noreferrer" href={github} className="github" target="_blank">
                      {" "}
                      Github{" "}
                   </a>

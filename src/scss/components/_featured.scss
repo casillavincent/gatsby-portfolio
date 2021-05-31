@@ -6,7 +6,15 @@
    flex-direction: start;
    // Single Items
    .work-item {
+      width: 100%;
       max-width: 600px;
+      height: auto;
+      min-height: 500px;
+      padding: 75px 0px;
+      @media screen and (min-width: 50em) {
+         min-height: 600px;
+         padding: 0px;
+      }
       @media screen and (min-width: 75em) {
          display: grid;
          grid-template-columns: 1fr 1fr;

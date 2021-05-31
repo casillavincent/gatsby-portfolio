@@ -18,7 +18,7 @@ const Mission = () => {
 
    useEffect(() => {
       checkMQL();
-   }, []);
+   });
    return (
       <article className="my-work-summary">
          <h2>My Work</h2>
