@@ -29,6 +29,7 @@ export const StyledButton = styled.button`
 export const Navigation = styled.nav`
    transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1);
    position: fixed;
+   z-index: 999;
    top: ${({ isOpen }) => (isOpen ? "75px" : "100%")};
    opacity: ${({ isOpen }) => (isOpen ? "100%" : "25%")};
    @media screen and (min-width: 50em) {

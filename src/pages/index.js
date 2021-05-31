@@ -6,6 +6,7 @@ import Splash from "../components/Splash";
 import { Helmet as Lordicon } from "react-helmet";
 import FeaturedWork from "../components/Featured";
 import Contact from "../components/Contact";
+import TopBtn from "../components/TopBtn";
 
 export default function Home() {
    return (
@@ -18,6 +19,7 @@ export default function Home() {
          <Mission />
          <FeaturedWork />
          <Contact />
+         <TopBtn />
       </Layout>
    );
 }
