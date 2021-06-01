@@ -1,51 +1,52 @@
 footer.site-footer {
-   width: 100%;
-   height: 100px;
-   background: black;
-   height: 200px;
-   display: flex;
-   flex-direction: column-reverse;
-   align-items: center;
-   justify-content: center;
-   color: white;
-   @media screen and (min-width: 50em) {
-      flex-direction: row-reverse;
-      justify-content: space-around;
-   }
+    width: 100%;
+    height: 100px;
+    background: black;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    @media screen and (min-width: 50em) {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
 
-   .copyright {
-      font-size: 0.75em;
-      margin: 15px 0px 0px 0px;
-   }
-   .social {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      p {
-         text-transform: lowercase;
-      }
-      @media screen and (min-width: 50em) {
-         align-items: flex-start;
-      }
-      .social-links {
-         margin: 5px;
-         @media screen and (min-width: 50em) {
-            margin: 0px;
-         }
-         a {
-            margin: 0px 10px;
-            color: white;
-            font-size: 0.9em;
-            transition: 0.3s ease-out;
+    .copyright {
+        font-size: 0.75em;
+        margin: 15px 0px 0px 0px;
+    }
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
             text-transform: lowercase;
-            &:hover {
-               color: $accent;
-            }
+            font-size: 1.15em;
+        }
+        @media screen and (min-width: 50em) {
+            align-items: flex-start;
+        }
+        .social-links {
+            margin: 5px;
             @media screen and (min-width: 50em) {
-               margin: 0px 15px 0px 0px;
+                margin: 0px;
             }
-         }
-      }
-   }
+            a {
+                margin: 0px 10px;
+                color: white;
+                font-size: 0.85em;
+                transition: 0.3s ease-out;
+                text-transform: lowercase;
+                &:hover {
+                    color: $accent;
+                }
+                @media screen and (min-width: 50em) {
+                    margin: 0px 15px 0px 0px;
+                }
+            }
+        }
+    }
 }

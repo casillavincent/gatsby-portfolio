@@ -94,10 +94,15 @@
             align-items: center;
             justify-content: center;
             a {
-               margin: 0px 15px;
-               border-radius: 10px;
+               background: rgb(243, 243, 243);
+               padding: 10px 20px;
+               margin: 0px 5px;
                color: black;
-               text-decoration: underline;
+               border-radius: 10px;
+               transition: all 0.3s ease-out;
+               &:hover {
+                  background: #ffd8d1;
+               }
             }
             @media screen and (min-width: 75em) {
                justify-content: flex-start;
