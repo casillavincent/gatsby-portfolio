@@ -9,37 +9,38 @@
 
 // Base Styles
 html {
-   font-size: 1em;
-   scroll-behavior: smooth;
-   * {
-      padding: 0px;
-      margin: 0px;
-      box-sizing: border-box;
-      font-family: $font2;
-   }
+    font-size: 1em;
+    scroll-behavior: smooth;
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: $font2;
+    }
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-   font-family: $font1;
-   line-height: 1;
+    font-family: $font1;
+    line-height: 1;
 }
 a,
 li,
 p {
-   font-size: 0.85em;
-   @media screen and (min-width: 50em) {
-      font-size: 0.95em;
-   }
+    font-size: 0.85em;
+    @media screen and (min-width: 50em) {
+        font-size: 0.95em;
+    }
 }
 a {
-   text-decoration: none;
+    text-decoration: none;
 }
 li {
-   list-style-type: none;
+    list-style-type: none;
 }
 
 // Imports
