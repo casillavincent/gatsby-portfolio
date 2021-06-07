@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Hero from "../assets/astronaut.svg";
 import { myStack, technicalSkills } from "../globals/myStack";
 import TopBtn from "../components/TopBtn";
+import Contact from "../components/Contact";
 
 const about = () => {
     return (
@@ -60,6 +61,7 @@ const about = () => {
                     </div>
                 </div>
             </article>
+            <Contact />
         </Layout>
     );
 };

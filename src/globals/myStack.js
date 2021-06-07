@@ -22,4 +22,5 @@ export const technicalSkills = [
     "Single page web applications",
     "UX/UI Design",
     "Wireframing & high-fidelity mockups",
+    "HTML E-mail Development",
 ];
