@@ -6,15 +6,15 @@ import "../scss/styles.scss";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
-   return (
-      <>
-         <Header />
-         <div className="wrapper">
-            <main className="site-main">{children}</main>
-         </div>
-         <Footer />
-      </>
-   );
+    return (
+        <>
+            <Header />
+            <div className="wrapper">
+                <main className="site-main">{children}</main>
+            </div>
+            <Footer />
+        </>
+    );
 };
 
 export default Layout;
