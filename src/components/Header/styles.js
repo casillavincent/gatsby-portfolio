@@ -37,8 +37,7 @@ export const Navigation = styled.nav`
     }
 
     left: 0px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: white;
     width: 100%;
     height: 100vh;
 
