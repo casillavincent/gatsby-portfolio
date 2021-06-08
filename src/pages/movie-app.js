@@ -4,6 +4,7 @@ import ProjectOverview from "../components/ProjectComponents/ProjectOverview";
 import ProjectTitle from "../components/ProjectComponents/ProjectTitle";
 import { projectTitles, projectOverview } from "../globals/info";
 
+
 const MovieApp = () => {
     return (
         <Layout>
