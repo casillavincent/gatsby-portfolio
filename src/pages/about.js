@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Hero from "../assets/astronaut.svg";
 import { myStack, technicalSkills } from "../globals/myStack";
-import TopBtn from "../components/TopBtn";
+import TopBtn from "../components/Widgets/TopBtn";
 import Contact from "../components/Contact";
 
 const about = () => {

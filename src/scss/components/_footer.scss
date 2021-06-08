@@ -25,6 +25,7 @@ footer.site-footer {
         p {
             text-transform: lowercase;
             font-size: 1.15em;
+            color: $accent;
         }
         @media screen and (min-width: 50em) {
             align-items: flex-start;

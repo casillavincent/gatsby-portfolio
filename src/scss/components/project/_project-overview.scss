@@ -1,0 +1,35 @@
+/* Project Overview */
+article.project-overview {
+    border: 1px solid red;
+    padding: 30px;
+
+    h2 {
+        margin-bottom: 5px;
+        font-size: 1.15em;
+    }
+    p,
+    li {
+        line-height: 2;
+        font-size: 0.95em;
+    }
+    section {
+        margin-bottom: 10px;
+    }
+
+    // Overview
+    section.overview {
+        grid-area: OVERVIEW;
+    }
+
+    // Team
+    section.team {
+        grid-area: HEADER;
+    }
+
+    // Role
+    section.role {
+        grid-area: ROLE;
+    }
+
+    // Development Stack
+}
