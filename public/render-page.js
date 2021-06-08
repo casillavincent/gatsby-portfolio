@@ -5811,6 +5811,7 @@ function v(){return(v=Object.assign||function(e){for(var t=1;t<arguments.length;
 
 /***/ "react-dom/server":
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /*!************************************************************************************************!*\
   !*** external "/Users/vince/Desktop/GitHub/gatsby-portfolio/node_modules/react-dom/server.js" ***!
   \************************************************************************************************/
@@ -5819,6 +5820,8 @@ function v(){return(v=Object.assign||function(e){for(var t=1;t<arguments.length;
 "use strict";
 module.exports = require("/Users/vince/Desktop/GitHub/gatsby-portfolio/node_modules/react-dom/server.js");;
 =======
+=======
+>>>>>>> Stashed changes
 /*!****************************************************************************************************!*\
   !*** external "/Users/vincent/Documents/GitHub/gatsby-portfolio/node_modules/react-dom/server.js" ***!
   \****************************************************************************************************/
@@ -5826,11 +5829,15 @@ module.exports = require("/Users/vince/Desktop/GitHub/gatsby-portfolio/node_modu
 
 "use strict";
 module.exports = require("/Users/vincent/Documents/GitHub/gatsby-portfolio/node_modules/react-dom/server.js");;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 /***/ }),
 
 /***/ "react":
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 /*!*******************************************************************************************!*\
   !*** external "/Users/vince/Desktop/GitHub/gatsby-portfolio/node_modules/react/index.js" ***!
@@ -5840,6 +5847,8 @@ module.exports = require("/Users/vincent/Documents/GitHub/gatsby-portfolio/node_
 "use strict";
 module.exports = require("/Users/vince/Desktop/GitHub/gatsby-portfolio/node_modules/react/index.js");;
 =======
+=======
+>>>>>>> Stashed changes
 /*!***********************************************************************************************!*\
   !*** external "/Users/vincent/Documents/GitHub/gatsby-portfolio/node_modules/react/index.js" ***!
   \***********************************************************************************************/
@@ -5847,6 +5856,9 @@ module.exports = require("/Users/vince/Desktop/GitHub/gatsby-portfolio/node_modu
 
 "use strict";
 module.exports = require("/Users/vincent/Documents/GitHub/gatsby-portfolio/node_modules/react/index.js");;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 /***/ }),
