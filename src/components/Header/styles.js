@@ -75,7 +75,7 @@ export const Logo = styled.div`
     a {
         font-size: 1.25em;
         padding: 10px;
-        color: black;
+        color: ${({ theme }) => (theme === "light" ? "white" : "black")};
     }
     @media screen and (min-width: 50em) {
         margin-left: 100px;

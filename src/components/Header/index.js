@@ -6,6 +6,8 @@ import { StyledHeader, StyledButton, Navigation, Logo } from "./styles";
 
 const Header = ({ theme }) => {
     const [isOpen, setIsOpen] = useState(false);
+
+    /* When the navigation bar is active, it will disable scrolling */
     useEffect(() => {
         const body = document.querySelector("body");
         if (isOpen) {
@@ -15,16 +17,23 @@ const Header = ({ theme }) => {
         }
     }, [isOpen]);
 
+    console.log(theme);
+
     return (
         <StyledHeader className="site-header">
             {/* Site Branding */}
-            <Logo className="logo">
+            <Logo className="logo" theme={theme}>
                 <Link to="/">Portfolio.</Link>
             </Logo>
 
             {/* Hamburger icon */}
             <StyledButton className="hamburger-icon">
-                <Hamburger size="20" color="black" toggled={isOpen} toggle={setIsOpen} />
+                <Hamburger
+                    size="20"
+                    color={theme === "light" ? "white" : "black"}
+                    toggled={isOpen}
+                    toggle={setIsOpen}
+                />
             </StyledButton>
 
             {/* Site Navigation */}
