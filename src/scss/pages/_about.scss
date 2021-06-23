@@ -94,4 +94,74 @@ article.my-stack {
         text-align: center;
         margin: 20px 0px;
     }
+
+    div.stack-list {
+        .stack-ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 100px;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}
+
+/* Grid Colors for individual stack item */
+#stack-item {
+    &__reactjs {
+        background: #5ed3f3;
+        color: #282c35;
+    }
+    &__html5 {
+        background: #dd4b24;
+        color: white;
+    }
+    &__css3 {
+        background: #0e73b7;
+        color: white;
+    }
+    &__sass {
+        background: #c76494;
+        color: white;
+    }
+    &__javascript {
+        background: #f7df1f;
+        color: #282c35;
+    }
+    &__jquery {
+        background: #0169af;
+        color: white;
+    }
+    &__typescript {
+        background: #2d79c7;
+        color: white;
+    }
+    &__gatsby {
+        background: #633194;
+        color: white;
+    }
+    &__apollo {
+        background: #010101;
+        color: white;
+    }
+    &__wordpress {
+        background: #00749a;
+        color: white;
+    }
+    &__php {
+        background: #858ebb;
+        color: white;
+    }
+    &__mysql {
+        background: #dd8a00;
+        color: white;
+    }
+    &__graphql {
+        background: #e10098;
+        color: white;
+    }
+    &__grunt {
+        background: #f3a419;
+        color: #282c35;
+    }
 }

@@ -50,11 +50,14 @@ const about = () => {
                             <h2>Tech Stack</h2>
                             <ul className="stack-ul">
                                 {myStack.map((item, i) => (
-                                    <li key={i}>{item}</li>
+                                    <li key={i} id={"stack-item__" + item.toLowerCase()}>
+                                        {item}
+                                    </li>
                                 ))}
                             </ul>
                         </div>
 
+                        {/* Technical Skills */}
                         <div className="technical-skills">
                             <h2>Technical Skills</h2>
                             <ul className="technical-skills-ul">
