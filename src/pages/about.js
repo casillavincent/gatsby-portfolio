@@ -12,7 +12,6 @@ const about = () => {
         <React.Fragment>
             <Header />
             <Layout>
-                <TopBtn />
                 {/* Summary - Above the Fold */}
                 <article className="about-summary">
                     {/* Banner */}
@@ -51,7 +50,7 @@ const about = () => {
                             <ul className="stack-ul">
                                 {myStack.map((item, i) => (
                                     <li key={i} id={"stack-item__" + item.toLowerCase()}>
-                                        {item}
+                                        #{item}
                                     </li>
                                 ))}
                             </ul>
@@ -69,6 +68,7 @@ const about = () => {
                     </div>
                 </article>
                 <Contact />
+                <TopBtn />
             </Layout>
             <Footer />
         </React.Fragment>

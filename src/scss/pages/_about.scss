@@ -79,29 +79,70 @@
 --------------------------------
 */
 article.my-stack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 35px 0px;
-    background: #f7f7f7;
 }
 
 .my-stack-inner-container {
     width: 100%;
     height: auto;
+    border: 1px dashed red;
+    padding: 10px;
+
     h2 {
-        text-align: center;
         margin: 20px 0px;
     }
+    @media screen and (min-width: 75em) {
+        max-width: 80%;
+    }
 
+    /* Stack */
     div.stack-list {
+        margin-bottom: 75px;
         .stack-ul {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-auto-rows: 100px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
             align-items: center;
-            justify-items: center;
+
+            li {
+                @include center-items--col;
+                padding: 10px 20px;
+                border-radius: 7px;
+                text-transform: lowercase;
+            }
+
+            @media screen and (min-width: 25em) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media screen and (min-width: 50em) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            @media screen and (min-width: 75em) {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            @media screen and (min-width: 100em) {
+                grid-template-columns: repeat(8, 1fr);
+            }
+        }
+    }
+
+    div.technical-skills {
+        .technical-skills-ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            @media screen and (min-width: 50em) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            li {
+                @include center-items--col;
+                padding: 10px 20px;
+                border-radius: 7px;
+                background: rgb(240, 240, 240);
+                color: #282c35;
+            }
         }
     }
 }
@@ -109,59 +150,59 @@ article.my-stack {
 /* Grid Colors for individual stack item */
 #stack-item {
     &__reactjs {
-        background: #5ed3f3;
+        background: rgba(#5ed3f3, 0.4);
         color: #282c35;
     }
     &__html5 {
-        background: #dd4b24;
-        color: white;
+        background: rgba(#dd4b24, 0.4);
+        color: #282c35;
     }
     &__css3 {
-        background: #0e73b7;
-        color: white;
+        background: rgba(#0e73b7, 0.4);
+        color: #282c35;
     }
     &__sass {
-        background: #c76494;
-        color: white;
+        background: rgba(#c76494, 0.4);
+        color: #282c35;
     }
     &__javascript {
-        background: #f7df1f;
+        background: rgba(#f7df1f, 0.4);
         color: #282c35;
     }
     &__jquery {
-        background: #0169af;
-        color: white;
+        background: rgba(#0169af, 0.4);
+        color: #282c35;
     }
     &__typescript {
-        background: #2d79c7;
-        color: white;
+        background: rgba(#2d79c7, 0.4);
+        color: #282c35;
     }
     &__gatsby {
-        background: #633194;
-        color: white;
+        background: rgba(#633194, 0.4);
+        color: #282c35;
     }
     &__apollo {
-        background: #010101;
-        color: white;
+        background: rgba(#010101, 0.4);
+        color: #282c35;
     }
     &__wordpress {
-        background: #00749a;
-        color: white;
+        background: rgba(#00749a, 0.4);
+        color: #282c35;
     }
     &__php {
-        background: #858ebb;
-        color: white;
+        background: rgba(#858ebb, 0.4);
+        color: #282c35;
     }
     &__mysql {
-        background: #dd8a00;
-        color: white;
+        background: rgba(#dd8a00, 0.4);
+        color: #282c35;
     }
     &__graphql {
-        background: #e10098;
-        color: white;
+        background: rgba(#e10098, 0.4);
+        color: #282c35;
     }
     &__grunt {
-        background: #f3a419;
+        background: rgba(#f3a419, 0.4);
         color: #282c35;
     }
 }
