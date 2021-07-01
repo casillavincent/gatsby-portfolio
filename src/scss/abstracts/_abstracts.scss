@@ -1,5 +1,6 @@
 /* Variables */
 $accent: #f55f44;
+$defaultPadding: 20px;
 
 /* Typography */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@300&display=swap");
@@ -8,8 +9,8 @@ $font2: "Open Sans", sans-serif;
 
 /* Mixins */
 @mixin center-items--col {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
