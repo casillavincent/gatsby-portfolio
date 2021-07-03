@@ -19,7 +19,7 @@ const about = () => {
 
                     {/* Summary Content */}
                     <div className="content">
-                        <h1>About Me</h1>
+                        <h1>About Me.</h1>
 
                         <p className="headline">Creative problem solver</p>
                         <p className="summary">

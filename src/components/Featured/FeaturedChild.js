@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 
 const FeaturedChild = ({ name, description, stack, github, livesite, img, hasInfo, slug }) => {
-    console.log(hasInfo, slug);
     return (
         <section className="work-item">
             {/* Thumbnail */}

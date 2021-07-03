@@ -17,8 +17,6 @@ const Header = ({ theme }) => {
         }
     }, [isOpen]);
 
-    console.log(theme);
-
     return (
         <StyledHeader className="site-header">
             {/* Site Branding */}
