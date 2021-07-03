@@ -31,7 +31,7 @@ const FeaturedChild = ({ name, description, stack, github, livesite, img, hasInf
                             Github{" "}
                         </a>
                     )}
-                    {hasInfo === true && <Link to={slug}>View More</Link>}
+                    {hasInfo === true && <Link to={slug}>More Info</Link>}
                 </div>
             </div>
         </section>
