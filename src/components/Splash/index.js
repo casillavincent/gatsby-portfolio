@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../../assets/hero.svg";
-import Sd from "../Sd";
+import ScrollDown from "../ScrollDown";
 
 const Splash = () => {
     return (
@@ -14,7 +14,7 @@ const Splash = () => {
                         <h2>Creative Developer</h2>
                         <p>Front-end Web Developer based in Vancouver, BC</p>
                     </div>
-                    <Sd />
+                    <ScrollDown />
                 </div>
 
                 {/* Banner Image */}
