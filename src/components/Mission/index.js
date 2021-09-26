@@ -9,10 +9,8 @@ const Mission = () => {
         const mql = window.matchMedia("(min-width: 50em)");
         function checkMQL() {
             if (mql.matches) {
-                console.log("Viewing in Desktop");
                 setIsDesktop(true);
             } else {
-                console.log("Viewing in Mobile/Tablet");
                 setIsDesktop(false);
             }
         }

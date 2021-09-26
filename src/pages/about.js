@@ -12,7 +12,6 @@ const about = () => {
         <React.Fragment>
             <Header />
             <Layout>
-                <TopBtn />
                 {/* Summary - Above the Fold */}
                 <article className="about-summary">
                     {/* Banner */}
@@ -20,7 +19,7 @@ const about = () => {
 
                     {/* Summary Content */}
                     <div className="content">
-                        <h1>About Me</h1>
+                        <h1>About Me.</h1>
 
                         <p className="headline">Creative problem solver</p>
                         <p className="summary">
@@ -50,11 +49,14 @@ const about = () => {
                             <h2>Tech Stack</h2>
                             <ul className="stack-ul">
                                 {myStack.map((item, i) => (
-                                    <li key={i}>{item}</li>
+                                    <li key={i} id={"stack-item__" + item.toLowerCase()}>
+                                        #{item}
+                                    </li>
                                 ))}
                             </ul>
                         </div>
 
+                        {/* Technical Skills */}
                         <div className="technical-skills">
                             <h2>Technical Skills</h2>
                             <ul className="technical-skills-ul">
@@ -66,6 +68,7 @@ const about = () => {
                     </div>
                 </article>
                 <Contact />
+                <TopBtn />
             </Layout>
             <Footer />
         </React.Fragment>

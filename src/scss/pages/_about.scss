@@ -10,7 +10,7 @@
     justify-content: center;
     padding: 75px 25px 0px 25px;
 
-    @media screen and (min-width: 50em) {
+    @media screen and (min-width: 75em) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 100%;
@@ -31,21 +31,21 @@
             max-width: 450px;
             padding: 30px;
         }
+        @media screen and (min-width: 75em) {
+            max-width: 500px;
+        }
     }
 
     .content {
         @media screen and (min-width: 50em) {
-            max-width: none;
+            max-width: 750px;
         }
         h1 {
             text-align: center;
             margin: 15px 0px 5px 0px;
             text-transform: lowercase;
-            @media screen and (min-width: 50em) {
-                text-align: left;
-                font-size: 2em;
-            }
             @media screen and (min-width: 75em) {
+                text-align: left;
                 font-size: 3em;
             }
         }
@@ -54,7 +54,8 @@
             margin-bottom: 20px;
             text-transform: lowercase;
             color: #e59950;
-            @media screen and (min-width: 50em) {
+            font-size: 0.95em;
+            @media screen and (min-width: 75em) {
                 text-align: left;
             }
         }
@@ -79,19 +80,138 @@
 --------------------------------
 */
 article.my-stack {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 35px 0px;
-    background: #f7f7f7;
+    padding: 50px 0;
 }
 
 .my-stack-inner-container {
+    padding: 0 20px;
     width: 100%;
-    height: auto;
+
     h2 {
-        text-align: center;
         margin: 20px 0px;
+        text-align: center;
+        @media screen and (min-width: 75em) {
+            margin: 0 0 20px 0;
+        }
+    }
+    @media screen and (min-width: 75em) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 100%;
+        grid-gap: 15px;
+        align-items: start;
+        justify-items: center;
+        max-width: 90%;
+    }
+
+    /* Stack */
+    div.stack-list {
+        margin: 0 0 50px 0;
+
+        .stack-ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            li {
+                @include center-items--col;
+                padding: 10px 20px;
+                border-radius: 7px;
+                text-transform: lowercase;
+            }
+
+            // MQL
+            @media screen and (min-width: 25em) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media screen and (min-width: 40em) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+    /* Technical Skills */
+    div.technical-skills {
+        .technical-skills-ul {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            li {
+                @include center-items--col;
+                padding: 10px 25px;
+                border-radius: 7px;
+                background: rgb(240, 240, 240);
+                color: #282c35;
+                text-align: center;
+            }
+
+            @media screen and (min-width: 25em) {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+/* Grid Colors for individual stack item */
+#stack-item {
+    &__reactjs {
+        background: rgba(#5ed3f3, 0.4);
+        color: #282c35;
+    }
+    &__html5 {
+        background: rgba(#dd4b24, 0.4);
+        color: #282c35;
+    }
+    &__css3 {
+        background: rgba(#0e73b7, 0.4);
+        color: #282c35;
+    }
+    &__sass {
+        background: rgba(#c76494, 0.4);
+        color: #282c35;
+    }
+    &__javascript {
+        background: rgba(#f7df1f, 0.4);
+        color: #282c35;
+    }
+    &__jquery {
+        background: rgba(#0169af, 0.4);
+        color: #282c35;
+    }
+    &__typescript {
+        background: rgba(#2d79c7, 0.4);
+        color: #282c35;
+    }
+    &__gatsby {
+        background: rgba(#633194, 0.4);
+        color: #282c35;
+    }
+    &__apollo {
+        background: rgba(#010101, 0.4);
+        color: #282c35;
+    }
+    &__wordpress {
+        background: rgba(#00749a, 0.4);
+        color: #282c35;
+    }
+    &__php {
+        background: rgba(#858ebb, 0.4);
+        color: #282c35;
+    }
+    &__mysql {
+        background: rgba(#dd8a00, 0.4);
+        color: #282c35;
+    }
+    &__graphql {
+        background: rgba(#e10098, 0.4);
+        color: #282c35;
+    }
+    &__grunt {
+        background: rgba(#f3a419, 0.4);
+        color: #282c35;
     }
 }

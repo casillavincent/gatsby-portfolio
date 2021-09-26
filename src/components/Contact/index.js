@@ -45,9 +45,16 @@ const StyledTitle = styled.p`
     }
 `;
 
-const StyledEmail = styled.a`
+const StyledEmail = styled.a.attrs({
+    href: "mailto:webdeveloper@vcasilla.com?subject=Hello Vincent!",
+    target: "_blank",
+})`
     color: #f55f44;
     font-size: 0.9em;
+    transition: 0.3s ease-out;
+    &:hover {
+        text-decoration: underline;
+    }
     @media screen and (min-width: 25em) {
         font-size: 1.2em;
     }
@@ -62,13 +69,7 @@ const Contact = () => {
             <ContactInnerWrapper>
                 <StyledContext>Contact</StyledContext>
                 <StyledTitle className="email-contact">Like my work? Let's chat!</StyledTitle>
-                <StyledEmail
-                    href="mailto:webdeveloper@vcasilla.com?subject=Hello Vincent!"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    webdeveloper@vcasilla.com
-                </StyledEmail>
+                <StyledEmail>webdeveloper@vcasilla.com</StyledEmail>
             </ContactInnerWrapper>
         </StyledSection>
     );

@@ -29,3 +29,10 @@ export const projectOverview = [
         },
     },
 ];
+
+export const projectInfo = [
+    {
+        name: "Butter.DB",
+        design: `I created high-fidelity mockups using Photoshop and Adobe XD throughout our design tools course. Although it’s not identical to the final product, I wanted to keep parts of my initial layout once I started with the development phase. For the basic design, I wanted to use colors that are dark and easy on the eyes. Considering that the backbone of this project was to re-create IMDB and TMDB, I wanted to keep their layout that's familiar to users.`,
+    },
+];
