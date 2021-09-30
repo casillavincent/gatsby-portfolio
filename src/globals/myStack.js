@@ -19,8 +19,9 @@ export const technicalSkills = [
     "Responsive web design (mobile-first)",
     "Headless CMS (WordPress API)",
     "SEO and Accessibility",
-    "Single page web applications",
+    "Single-page web applications",
     "UX/UI Design",
     "Wireframing & high-fidelity mockups",
-    "HTML E-mail Development",
+    "E-mail Development",
+    "CRM and Automation",
 ];
